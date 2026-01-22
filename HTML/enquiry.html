@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wanderwise</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../CSS/index.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+.contact-section {
+  width: 100%;
+}
+
+.contact-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Form */
+.form-box {
+  width: 50%;
+  background: red;
+  padding: 40px;
+  color: white;
+}
+
+.row {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 25px;
+}
+
+.field {
+  width: 100%;
+}
+
+.field.full {
+  margin-bottom: 25px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+}
+
+textarea {
+  height: 150px;
+  resize: none;
+}
+
+/* Image */
+.image-box {
+  width: 50%;
+  height: fit-content;
+}
+
+.image-box img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .form-box,
+  .image-box {
+    width: 100%;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div class="logo">
+        <img src="../Travel website images/fe1f9b66-9b44-4ab0-94b5-0d2bf5148224-removebg-preview 1.png" alt="logo">
+    </div>
+
+    <div class="search-bar">
+        <input type="text" placeholder="Search Destinations">
+        <span>🔍</span>
+    </div>
+
+    <!-- Icons -->
+  <div class="nav-icons">
+    <img src="https://randomuser.me/api/portraits/men/32.jpg" class="profile">
+    <i class="fa-regular fa-heart"></i>
+    <i class="fa-solid fa-cart-shopping"></i>
+    <i class="fa-regular fa-bell"></i>
+  </div>
+</div>
+<h3>Wanderwise</h3>
+
+<!-- MENU -->
+<div class="menu">
+    <a href="home.html" class="active">Home</a>
+    <a href="destinations.html">Destinations</a>
+    <a href="categories.html">Categories</a>
+    <a href="packages.html">Packages</a>
+    <a href="blogs.html">Blogs</a>
+    <a href="contact.html">Contact</a>
+</div>
+
+<section class="contact-section">
+  <div class="contact-container">
+
+    <!-- Form -->
+    <div class="form-box">
+      <form>
+        <div class="row">
+          <div class="field">
+            <label>First Name*</label>
+            <input type="text" placeholder="Ex.john">
+          </div>
+          <div class="field">
+            <label>Last Name*</label>
+            <input type="text" placeholder="Ex.Doe">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field">
+            <label>E-mail*</label>
+            <input type="email" placeholder="example@gmail.com">
+          </div>
+          <div class="field">
+            <label>Phone*</label>
+            <input type="text" placeholder="enter phone num">
+          </div>
+        </div>
+
+        <div class="field full">
+          <label>Subject*</label>
+          <input type="text" placeholder="Enter here">
+        </div>
+
+        <div class="field full">
+          <label>Your Message*</label>
+          <textarea placeholder="Enter here"></textarea>
+        </div>
+      </form>
+    </div>
+
+    <!-- Image -->
+    <div class="image-box">
+      <img src="../Travel website images/19c3ed39-b147-4e02-bd84-ea0030d60dfe 2.png" alt="support">
+    </div>
+
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-content">
+
+    <div class="footer-col logo">
+      <img src="../Travel website images/fe1f9b66-9b44-4ab0-94b5-0d2bf5148224-removebg-preview 1.png">
+      
+    </div>
+
+    <div class="footer-col">
+      <h4>About Us</h4>
+      <p>Who We Are</p>
+      <p>Our Mission</p>
+      <p>How It Works</p>
+      <p>Success</p>
+      <p>Vacations</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <p>Browse</p>
+      <p>Packages</p>
+      <p>Categories</p>
+      <p>Support</p>
+      <p>Blog</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <p>Adventure</p>
+      <p>Beach</p>
+      <p>City Tours</p>
+      <p>Family</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact & Social</h4>
+      <p>123 Saik Street, Chennai, TN</p>
+      <p>+91-7867980-688</p>
+      <p>Wan@wanderwisetravel.com</p>
+    </div>
+
+    <div class="footer-col social">
+      <img src="../Travel website images/unsplash_2Zi8szsbMK0.png">
+      <p>Follow Us On :</p>
+      <div class="icons">
+        <i class="fab fa-youtube"></i>
+        <i class="fab fa-google"></i>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+      </div>
+    </div>
+
+  </div>
+  <h3 style="color: white;">Wanderwise</h3>
+
+  <div class="footer-bottom">
+    © 2025 wanderwisevacation. All rights reserved.<br>
+    Terms & Conditions | Privacy Policy
+  </div>
+</footer>
+
+</body>
+</html>

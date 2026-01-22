@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wanderwise</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../CSS/index.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+    /* ===== Main Layout ===== */
+.account-wrapper {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.account-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+/* ===== Content ===== */
+.account-container {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 50px;
+}
+
+/* Sidebar */
+.sidebar a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  padding: 16px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid #555;
+  color: #000;
+  font-weight: 500;
+}
+
+.sidebar a.active {
+  background: #ff1e00;
+  color: #fff;
+  border: none;
+}
+
+.logout-container {
+      background: #ffffff;
+      width: 100%;
+      max-width: 500px;
+      padding: 50px 20px;
+      text-align: center;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    }
+
+    .logout-container h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #000;
+    }
+
+    .logout-container p {
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 40px;
+    }
+
+    .logout-btn {
+      background: #ff1a1a;
+      color: #fff;
+      border: none;
+      padding: 18px 40px;
+      font-size: 18px;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .logout-btn:hover {
+      background: #cc0000;
+    }
+
+    @media (max-width: 480px) {
+      .logout-container h1 {
+        font-size: 28px;
+      }
+
+      .logout-container p {
+        font-size: 16px;
+      }
+
+      .logout-btn {
+        width: 100%;
+      }
+    }
+
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+  .account-container {
+    grid-template-columns: 1fr;
+  }
+
+}
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div class="logo">
+        <img src="../Travel website images/fe1f9b66-9b44-4ab0-94b5-0d2bf5148224-removebg-preview 1.png" alt="logo">
+    </div>
+
+    <div class="search-bar">
+        <input type="text" placeholder="Search Destinations">
+        <span>🔍</span>
+    </div>
+
+    <button class="register-btn"><a href="register.html">Register</a></button>
+</div>
+<h3>Wanderwise</h3>
+
+<!-- MENU -->
+<div class="menu">
+    <a href="home.html">Home</a>
+    <a href="destinations.html">Destinations</a>
+    <a href="categories.html">Categories</a>
+    <a href="packages.html">Packages</a>
+    <a href="blogs.html">Blogs</a>
+    <a href="contact.html">Contact</a>
+</div>
+
+<!-- Main -->
+<section class="account-wrapper">
+  <div class="account-title">My Account</div>
+
+  <div class="account-container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <a href="personal.html">Personal Information</a>
+      <a href="booking.html">My Booking</a>
+      <a href="password.html">Password Manager</a>
+      <a href="logout.html" class="active">Logout</a>
+    </div>
+
+    <div class="logout-container">
+    <h1>Log Out</h1>
+    <p>Are you sure, you want to log out?</p>
+    <button class="logout-btn" onclick="logoutUser()">Yes, Logout</button>
+  </div>
+
+  <script>
+    function logoutUser() {
+      // Example logout action
+      alert("Logged out successfully!");
+      // Redirect after logout
+      window.location.href = "personal.html"; 
+    }
+  </script>
+
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-content">
+
+    <div class="footer-col logo">
+      <img src="../Travel website images/fe1f9b66-9b44-4ab0-94b5-0d2bf5148224-removebg-preview 1.png">
+      
+    </div>
+
+    <div class="footer-col">
+      <h4>About Us</h4>
+      <p>Who We Are</p>
+      <p>Our Mission</p>
+      <p>How It Works</p>
+      <p>Success</p>
+      <p>Vacations</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <p>Browse</p>
+      <p>Packages</p>
+      <p>Categories</p>
+      <p>Support</p>
+      <p>Blog</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <p>Adventure</p>
+      <p>Beach</p>
+      <p>City Tours</p>
+      <p>Family</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact & Social</h4>
+      <p>123 Saik Street, Chennai, TN</p>
+      <p>+91-7867980-688</p>
+      <p>Wan@wanderwisetravel.com</p>
+    </div>
+
+    <div class="footer-col social">
+      <img src="../Travel website images/unsplash_2Zi8szsbMK0.png">
+      <p>Follow Us On :</p>
+      <div class="icons">
+        <i class="fab fa-youtube"></i>
+        <i class="fab fa-google"></i>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+      </div>
+    </div>
+
+  </div>
+  <h3 style="color: white;">Wanderwise</h3>
+
+  <div class="footer-bottom">
+    © 2025 wanderwisevacation. All rights reserved.<br>
+    Terms & Conditions | Privacy Policy
+  </div>
+</footer>
+
+</body>
+</html>

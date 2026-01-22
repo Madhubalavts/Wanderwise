@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wanderwise</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../CSS/index.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+    .container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+/* Layout */
+.layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 40px;
+}
+
+/* Sidebar */
+.sidebar a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  padding: 16px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid #555;
+  color: #000;
+  font-weight: 500;
+}
+
+.sidebar a.active {
+  background: #ff1e00;
+  color: #fff;
+  border: none;
+}
+
+/* Booking Info */
+.booking-info {
+  background: #ff1e00;
+  color: #fff;
+  border-radius: 20px;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.booking-info h4 {
+  font-weight: normal;
+  margin-bottom: 8px;
+}
+
+/* Destination */
+.destination {
+  margin-top: 35px;
+}
+
+.destination h2 {
+  margin-bottom: 20px;
+}
+
+.destination-card {
+  background: #ff1e00;
+  border-radius: 15px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 120px 1fr auto;
+  gap: 20px;
+  align-items: center;
+  color: #fff;
+}
+
+.destination-card img {
+  width: 100%;
+  height: 100px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.trip-title {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.trip-price {
+  text-align: right;
+}
+
+.trip-price h3 {
+  font-size: 22px;
+}
+
+.trip-price p {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Status */
+.status {
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.status a {
+  text-decoration: none;
+  padding: 14px 35px;
+  border-radius: 30px;
+  border: 2px solid #000;
+  color: #000;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-info {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .destination-card {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .trip-price {
+    text-align: center;
+  }
+
+  .status {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .booking-info {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div class="logo">
+        <img src="../Travel website images/fe1f9b66-9b44-4ab0-94b5-0d2bf5148224-removebg-preview 1.png" alt="logo">
+    </div>
+
+    <div class="search-bar">
+        <input type="text" placeholder="Search Destinations">
+        <span>🔍</span>
+    </div>
+
+    <button class="register-btn"><a href="register.html">Register</a></button>
+</div>
+<h3>Wanderwise</h3>
+
+<!-- MENU -->
+<div class="menu">
+    <a href="home.html">Home</a>
+    <a href="destinations.html">Destinations</a>
+    <a href="categories.html">Categories</a>
+    <a href="packages.html">Packages</a>
+    <a href="blogs.html">Blogs</a>
+    <a href="contact.html">Contact</a>
+</div>
+
+<div class="container">
+  <div class="title">My Bookings</div>
+
+  <div class="layout">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <a href="personal.html">Personal Information</a>
+      <a href="booking.html" class="active">My Booking</a>
+      <a href="password.html">Password Manager</a>
+      <a href="logout.html">Logout</a>
+    </div>
+
+    <!-- Content -->
+    <div>
+
+      <!-- Booking Info -->
+      <div class="booking-info">
+        <div>
+          <h4>Order ID</h4>
+          <p>#SJKD456FH</p>
+        </div>
+        <div>
+          <h4>Payment Method</h4>
+          <p>Credit card</p>
+        </div>
+        <div>
+          <h4>Transaction Id</h4>
+          <p>TF59DHJK</p>
+        </div>
+        <div>
+          <h4>Travelling Trip Date</h4>
+          <p>28 July 2025</p>
+        </div>
+      </div>
+
+      <!-- Destination -->
+      <div class="destination">
+        <h2>Destination</h2>
+
+        <div class="destination-card">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Bali">
+          <div class="trip-title">Bali Vacation trip</div>
+          <div class="trip-price">
+            <h3>Rs.20000</h3>
+            <p>8 Days / 7 Nights</p>
+            <p>Business, Class</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Status -->
+      <div class="status">
+        <a href="#">Accepted</a>
+        <p>Your order has been accepted</p>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-content">
+
+    <div class="footer-col logo">
+      <img src="../Travel website images/fe1f9b66-9b44-4ab0-94b5-0d2bf5148224-removebg-preview 1.png">
+      
+    </div>
+
+    <div class="footer-col">
+      <h4>About Us</h4>
+      <p>Who We Are</p>
+      <p>Our Mission</p>
+      <p>How It Works</p>
+      <p>Success</p>
+      <p>Vacations</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <p>Browse</p>
+      <p>Packages</p>
+      <p>Categories</p>
+      <p>Support</p>
+      <p>Blog</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <p>Adventure</p>
+      <p>Beach</p>
+      <p>City Tours</p>
+      <p>Family</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact & Social</h4>
+      <p>123 Saik Street, Chennai, TN</p>
+      <p>+91-7867980-688</p>
+      <p>Wan@wanderwisetravel.com</p>
+    </div>
+
+    <div class="footer-col social">
+      <img src="../Travel website images/unsplash_2Zi8szsbMK0.png">
+      <p>Follow Us On :</p>
+      <div class="icons">
+        <i class="fab fa-youtube"></i>
+        <i class="fab fa-google"></i>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+      </div>
+    </div>
+
+  </div>
+  <h3 style="color: white;">Wanderwise</h3>
+
+  <div class="footer-bottom">
+    © 2025 wanderwisevacation. All rights reserved.<br>
+    Terms & Conditions | Privacy Policy
+  </div>
+</footer>
+
+</body>
+</html>

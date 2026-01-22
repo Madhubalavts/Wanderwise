@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register Free</title>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #000;
+}
+
+/* Overlay */
+.overlay {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Main Box */
+.auth-wrapper {
+  background: #f7efec;
+  width: 100%;
+  max-width: 1100px;
+  border-radius: 25px;
+  display: flex;
+  overflow: hidden;
+}
+
+/* Form Card */
+.auth-card {
+  background: #fff;
+  width: 50%;
+  padding: 40px;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.close {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.auth-card h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.auth-card input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  border: 1px solid red;
+  outline: none;
+}
+
+/* Button Row */
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn {
+  background: red;
+  color: #fff;
+  border: none;
+  padding: 12px 40px;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.forgot {
+  font-size: 14px;
+  color: #333;
+  text-decoration: none;
+}
+
+/* Divider */
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.divider span {
+  flex: 1;
+  height: 1px;
+  background: red;
+}
+
+.divider p {
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+/* Social Icons */
+.social {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid red;
+  padding: 12px;
+  border-radius: 15px;
+}
+
+.social i {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.google { color: #DB4437; }
+.facebook { color: #1877F2; }
+.instagram { color: #E1306C; }
+.twitter { color: #1DA1F2; }
+
+.signup {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.signup a {
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Right Image */
+.auth-image {
+  width: 50%;
+  background: url('../Travel\ website\ images/unsplash_JYrqpXSnEZk.png') center/cover no-repeat;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .auth-wrapper {
+    flex-direction: column;
+  }
+
+  .auth-card,
+  .auth-image {
+    width: 100%;
+  }
+
+  .auth-image {
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div class="overlay">
+  <div class="auth-wrapper">
+
+    <!-- LEFT FORM -->
+    <div class="auth-card">
+      <span class="close">&times;</span>
+      <h2>Register Free !</h2>
+
+      <input type="email" placeholder="Enter your e-mail">
+      <input type="password" placeholder="Password">
+
+      <div class="row">
+        <button class="btn">Login</button>
+        <a href="home.html" class="forgot">Forget your password?</a>
+      </div>
+
+      <div class="divider">
+        <span></span>
+        <p>Sign Up Using</p>
+        <span></span>
+      </div>
+
+      <div class="social">
+        <i class="fab fa-google google"></i>
+        <i class="fab fa-facebook-f facebook"></i>
+        <i class="fab fa-instagram instagram"></i>
+        <i class="fab fa-twitter twitter"></i>
+      </div>
+
+      <p class="signup">
+        Don’t have an account ? <a href="#">Create New Account</a>
+      </p>
+    </div>
+
+    <!-- RIGHT IMAGE -->
+    <div class="auth-image"></div>
+
+  </div>
+</div>
+
+</body>
+</html>
